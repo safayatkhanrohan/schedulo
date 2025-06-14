@@ -1,0 +1,20 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python env accidentally placed at root
+venv/
+.venv/
+env/
+
+# dotenv files at root
+.env
+.env.*
+
+# Ignore editor configs (optional)
+.vscode/
+.idea/
+*.swp

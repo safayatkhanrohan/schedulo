@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>New Booking Request</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #222222;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 6px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #111111;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        strong {
+            color: #111111;
+        }
+
+        .highlight {
+            color: #22bc66;
+            font-weight: 600;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 13px;
+            color: #888888;
+            text-align: center;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hello {{ freelancer_name }},</h1>
+
+        <p>
+            You have received a new booking request from <strong>{{ client_name }}</strong>.
+        </p>
+
+        <p>
+            <strong>Booking Time:</strong> <span class="highlight">{{ booking_time }}</span>
+        </p>
+
+        <p>
+            Please log in to your dashboard to review and accept the booking.
+        </p>
+
+        <p class="footer">
+            © {{ current_year | default(2025) }} Schedulo. All rights reserved.
+        </p>
+    </div>
+</body>
+
+</html>
