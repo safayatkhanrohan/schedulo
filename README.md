@@ -79,17 +79,17 @@ ZOOM_ACCOUNT_ID=your-zoom-account-id
 - `GET /api/v1/auth/me` – Get current user  
 
 ### 📌 Availability
-- `POST /availability` – Create Availability 
-- `GET /availability/freelancer/{freelancer_id}/` – Get all availability by freelancer id
-- `GET /availability/{id}` – Get single availability
-- `PUT /availability/{id}` – Update availability
-- `DELETE /availability/{id}` – Delete availability
+- `POST /api/v1/availability` – Create Availability 
+- `GET /api/v1/availability/freelancer/{freelancer_id}/` – Get all availability by freelancer id
+- `GET /api/v1/availability/{id}` – Get single availability
+- `PUT /api/v1/availability/{id}` – Update availability
+- `DELETE /api/v1/availability/{id}` – Delete availability
 
 ### 📌 Bookings
-- `GET /bookings/` – Get user bookings  
-- `POST /bookings/create/{availability_id}` – Request new booking 
-- `PUT /bookings/{id}` – Accept/Reject/Complete  
-- `GET /bookings/{id}` – Get booking detail  
+- `GET /api/v1/bookings/` – Get user bookings  
+- `POST /api/v1/bookings/create/{availability_id}` – Request new booking 
+- `PUT /api/v1/bookings/{id}` – Accept/Reject/Complete  
+- `GET /api/v1/bookings/{id}` – Get booking detail  
 - `DELETE /bookings/{id}` – Cancel booking
 
 ---
